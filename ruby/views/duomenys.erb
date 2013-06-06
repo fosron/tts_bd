@@ -1,0 +1,5 @@
+<ul class=entries>
+  <% @puslapiai.each do |puslapiai| %>
+    <li><h2><a href="/puslapis/<%= puslapiai.trumpas %>"><%= puslapiai.pavadinimas %></a></h2></li>
+  <% end %>
+</ul>

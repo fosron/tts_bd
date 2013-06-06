@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+    {% block nuorodos %}class="active"{% endblock %}
+    {% block content %}
+    <div class="span6 pull-left">
+        <div class="well">
+            <div class="alert alert-success">
+                <a class="close">✕</a>
+                <strong>Išsaugota</strong>
+            </div>
+           <form>
+                <fieldset>
+                    <legend>Informacija</legend>
+                    <label>Pavadinimas</label>
+                    <input class="input-block-level" type="text" placeholder="Pavadinimas"/>
+                    <label>Adresas</label>
+                    <input class="input-block-level" type="text" disabled="disabled" placeholder="http://adresas/n/1"/>
+                    <label>Reklamos</label>
+                        <label class="checkbox">
+                            <input type="checkbox"/> Reklama #1
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox"/> Reklama #2
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox"/> Reklama #3
+                        </label>
+    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Išsaugoti</button>
+                        <button type="button" class="btn">Atšaukti</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="span6 pull-left">
+        <div class="well">
+            <h2>Informacija</h2>
+            <p>
+                <strong>Paspaudimų: </strong> 150
+            </p>
+        </div>
+    </div>
+    
+    {% endblock %}

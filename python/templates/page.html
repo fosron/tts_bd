@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block body %}
+  <ul class=entries>
+  {% for entry in entries %}
+    <li><h2>{{ entry.title }}</h2> 
+    {{ entry.text|safe }}
+  {% else %}
+    <li><em>Nerasta.</em>
+  {% endfor %}
+  </ul>
+<div class=metanav>
+  <a href="/">Visi</a>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base_site.html" %}
+    {% block content %}
+        <div class="span9 main-content">
+            <div class="content-holder">
+                {% if content.status == 0 %}
+                <div class="alert alert-warning">
+                    <strong>Puslapis nematomas viešai!</strong>
+                </div>
+                {% endif %}
+                <h2>{{ content.name }}</h2>
+                <div class="text">
+                    {{ content.content | raw }}
+                </div>
+            </div>
+            </div>
+        </div>
+    {% endblock %}

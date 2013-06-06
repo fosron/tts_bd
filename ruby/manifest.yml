@@ -1,0 +1,19 @@
+---
+applications:
+  .:
+    name: fosronrb
+    framework:
+      name: sinatra
+      info:
+        mem: 128M
+        description: Sinatra Application
+        exec: ruby app.rb
+    infra: eu-aws
+    url: ${name}.${target-base}
+    mem: 128M
+    instances: 1
+    services:
+      fosronwp-mysql-83283:
+        type: mysql
+      mysql-6e24e:
+        type: mysql

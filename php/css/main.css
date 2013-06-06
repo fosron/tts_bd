@@ -1,0 +1,80 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body
+{
+    padding: 10px;
+    padding-bottom: 40px;
+    background: #ffffff;
+    background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed));
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%);
+    background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%);
+    background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%);
+    background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );
+}
+
+.main-content{
+}
+
+.sidebar-nav
+{
+    padding: 0;
+    border: none;
+    width: 230px;
+}
+
+.hero-unit, .well {
+    -webkit-box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+#content-holder {
+    padding: 10px 25px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.hero-unit {
+    padding: 30px;
+}
+
+.hero-unit h1{
+    font-size: 48px;
+}
+
+a.nounderline
+{
+    text-decoration: none;
+}
+
+.sidebar-nav {
+    padding: 20px;
+}
+
+.sidebar-login form{
+    padding: 14px;
+}
+
+.table td.center
+{
+    text-align: center;
+}
+
+.dropdown-menu
+{
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+footer{
+     border-top: 1px solid white;
+     padding-top: 15px;
+}
